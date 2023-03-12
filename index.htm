@@ -449,8 +449,8 @@ var _hmt = _hmt || [];
 	</section>
 
 	<div class="container">
-		<h4>NaoKouLing <a href="/ahr999.com">囤饼指数</a> <a href="https://iris.to/ahr999.com"><b>Nostr</b></a> <a href="https://getalby.com/p/cndx">⚡</a><a href="lightning:cndx@ahr999.com" target="_self">cndx@ahr999.com</a></h4>
-		 <textarea class="u-full-width" placeholder="请这里随意输入 NaoKouLing 脑口令" style="font-size:28px;"  onclick="naokouling(this.value);" onkeyup="naokouling(this.value);" onchange="naokouling(this.value);" value="123" id="naokouling"></textarea>
+		<h4>NaoKouLing <a href="https://ahr999.com/ahr999">囤</a><a href="https://bitcoinall.org">饼</a><a href="https://ahr999.com/ahr999.com">指</a><a href="https://btayx.com/ahr999.com">数</a> <span style="font-size:24px;"><a href="https://iris.to/ahr999.com"><b>Nostr</b></a> <a href="https://getalby.com/p/cndx">⚡</a><a href="lightning:cndx@ahr999.com" target="_self">cndx@ahr999.com</a></span></h4>
+		 <textarea class="u-full-width" placeholder="请这里随意输入 NaoKouLing 脑口令" style="font-size:26px;"  onclick="naokouling(this.value);" onkeyup="naokouling(this.value);" onchange="naokouling(this.value);" value="" id="naokouling"></textarea>
 		 <label for="hex-key">SHA256(NaoKouLing)得HEX key，编码得Nostr的nsec和BTC压缩私钥</label>
 	      <input type="text" class="u-full-width" onchange="getaddress(this.value)" onkeyup="getaddress(this.value)" placeholder="HEX（这里及上下需保密）" id="hex-key">
 		  <input type="text" class="u-half-width" placeholder="nsec   bech32.encode('nsec', HEX)" id="nsec-key">
@@ -459,32 +459,11 @@ var _hmt = _hmt || [];
 		  <input type="text" class="u-half-width" style="font-weight:bolder" placeholder="npub   bech32.encode('npub', X)" id="nostr-npub">
 		  <span style="float:right;" class="u-halfs-width"><input type="text" class="u-full-width" placeholder="₿    Bitcoin.Base58.encode(RIPEMD160(SHA256(Y02/Y03+X)))" id="btc-pub"></span>
 		<h3>Web Clients网页</h3>
-		<p><a href="https://www.nostr.net/">Nostr.net </a>
-		<a href="https://nostr-resources.com/">Res </a>
-		<a href="https://www.nostr.guru/">Gateway </a>&nbsp;
-		<a href="https://iris.to/npub16dq3qps8sgehezrylamryx5zrukmhnashvecvjcucjr3927cf2qqd8evcw">[●]iris.to &nbsp;</a>
-		<a href="https://www.broadcstr.com/npub16dq3qps8sgehezrylamryx5zrukmhnashvecvjcucjr3927cf2qqd8evcw">Broadcstr&nbsp;</a>
-		<span id="urls"><a href="https://astral.ninja/npub16dq3qps8sgehezrylamryx5zrukmhnashvecvjcucjr3927cf2qqd8evcw">Astral&nbsp;</a>
-		<a href="https://yosup.app/profile/d34110060782337c8864ff76321a821f2dbbcfb0bb33864b1cc48712abd84a80">Yosup&nbsp;</a>
-		<a href="https://branle.netlify.app/d34110060782337c8864ff76321a821f2dbbcfb0bb33864b1cc48712abd84a80">🐦Netlify&nbsp;</a>
-		<a href="https://hamstr.to/profile/npub16dq3qps8sgehezrylamryx5zrukmhnashvecvjcucjr3927cf2qqd8evcw">Hamstr&nbsp;</a>
-		<a href="https://snort.social/p/npub16dq3qps8sgehezrylamryx5zrukmhnashvecvjcucjr3927cf2qqd8evcw">Snort&nbsp;</a>
-		<a href="https://nostr.band/npub16dq3qps8sgehezrylamryx5zrukmhnashvecvjcucjr3927cf2qqd8evcw">Nostr.band&nbsp;</a></span></p>
+		<p><div id="NostrWeb"></div></p>
 		<h3>APP Clients应用</h3>
-		<p><a href="https://apps.apple.com/ca/app/damus/id1628663131">iOS: Damus</a>&nbsp;&nbsp;  <a href="https://github.com/vitorpamplona/amethyst/releases/">Android: Amethyst</a> <a href="https://github.com/KoalaSat/nostros/releases">Nostros</a> <a href="https://pan.baidu.com/s/1V-TA-o4230Ypt8xqgxjqOw?pwd=doge">[云yun]</a>  &nbsp;&nbsp;&nbsp;  <a href="https://nostr.watch/relays/find#public">Watch Relays Map</a></p>
+		<p><div id="NostrApp"></div></p>
 		<h3>LN Wallets闪电</h3>
-		<p><a href="https://lightningaddress.com/">LN@</a>&nbsp;
-		<a href="https://www.lapps.co/">lapps</a>&nbsp;
-		<a href="https://www.bitrefill.com/blog/top-11-lightning-network-wallets-bitrefill/">T11</a>&nbsp;
-		<a href="https://getalby.com/">getAlby</a><a href="https://github.com/getAlby/lightning-browser-extension/releases">(Ext)</a>
-		<a href="https://pan.baidu.com/s/1V-TA-o4230Ypt8xqgxjqOw?pwd=doge"><b>[YUN]</b></a>&nbsp;
-		<a href="https://github.com/ACINQ/phoenix/releases">Phoenix</a>&nbsp;
-		<a href="https://github.com/breez/breezmobile/releases">Breez</a>&nbsp;
-		<a href="https://github.com/muun/apollo">Muun</a>&nbsp;
-		<a href="https://github.com/ZeusLN/zeus/releases">Zeus</a>&nbsp;		
-		<a href="https://github.com/BlueWallet/BlueWallet/releases">BlueWallet</a>&nbsp;
-		<a href="https://walletofsatoshi.com/">WoS</a>&nbsp;
-		<a href="https://www.bitrefill.com/thor-lightning-network-channels/?utm_source=medium&utm_medium=blog&utm_campaign=lightning-wallets">BLW</a></p>
+		<p><div id="LNlink"></div></p>
 		<h3>Key Converter转化</h3>
 			<label for="nostrurl"><a href="http://8nostr.com/nip5"><b>Nip-05 </b></a><span id="nostrln"><a href="https://nostrurl.com/nip5/">🏅</a> or <a href="lightning:cndx@getalby.com" target=_self>LN⚡UR</a><a href="https://github.com/lnurl/luds/blob/legacy/lnurl-pay.md">L</a> </span></label>
 			<script>
@@ -562,13 +541,34 @@ function computeChecksum (hx) {
     nonChecksum: secondSHA.substr(8,secondSHA.length).toUpperCase()
   };
 }
+
+
 			function nostrln(n){
 			var d=n.split('@');
 			var lnurl='<b>'+d[1]+'</b>/.well-known/lnurlp/<b>'+d[0]+'</b>';
-			document.getElementById('nostrln').innerHTML='<a href="https://iris.to/'+n.replace('_@','')+'">  [●]iris.io </a><a href="https://'+d[1]+'/.well-known/nostr.json?name='+d[0]+'"> 🏅nostr.json </a>  <a href="lightning:'+n+'" target=_self> &nbsp;&nbsp; LN⚡&nbsp; </a><a href="https://'+d[1]+'/.well-known/lnurlp/'+d[0]+'">'+lnurl+'</a>';
+			document.getElementById('nostrln').innerHTML='<a href="https://iris.to/'+n.replace('_@','')+'">  ☯️iris.io </a><a href="https://'+d[1]+'/.well-known/nostr.json?name='+d[0]+'"> 🏅nostr.json </a>  <a href="lightning:'+n+'" target=_self> &nbsp;&nbsp; LN⚡&nbsp; </a><a href="https://'+d[1]+'/.well-known/lnurlp/'+d[0]+'">'+lnurl+'</a>';
 			}
-			</script>
-	      <input type="text" class="u-full-width" placeholder="" onclick="nostrln(this.value);" onkeyup="nostrln(this.value);" onchange="nostrln(this.value);" value="cndx@nostrurl.com" id="nostrurl">
+			function nip5add(nipcom){
+			var nip=document.getElementById('nostrurl').value;
+			var ns=nip.split("@");
+			var nid=ns[0];if(nid=="")nid="cndx";
+			nid=nid+"@"+nipcom;
+			nostrln(nid);
+			document.getElementById('nostrurl').value=nid;
+			}
+			function check(){
+			var nip=document.getElementById('nostrurl').value;
+			var ns=nip.split("@");
+			var str="";
+			if(ns[0]=="cndx"||ns[0]=="_"){str=str+"请将 cndx 替换成您自己的ID\n";}
+			if(ns.length!=2){str=str+"请输入类似邮箱的正确格式 Nip-05\n";}
+			if(document.getElementById('damus-key').value==""){str=str+"请先下方输入您的 npub\n";}
+			if(str!=""){alert(str);return false;}
+			}
+			</script><br />
+<form action="https://8nostr.com/.well-known/add.php" method="post" onsubmit="return check();" target="_blank">
+	<input name="nip05" type="text" class="u-halfs-width" placeholder="" onclick="nostrln(this.value);" onkeyup="nostrln(this.value);" onchange="nostrln(this.value);" style="font-size:24px;font-weight:bold" value="cndx@nostrurl.com" id="nostrurl">
+		  <input type="submit" style="background-color:#800080;height:36px;" value="提交申请"><span id="nip5adds"></span><br />
 	      <label for="bech32">Nostr key (<a href="http://wiccm.com/btcdv.com">BtcDV</a>&nbsp; <a target="_self" href="https://iris.to/npub15d9enu3v0yxyud4jk0pvxk3kmvrzymjpc6f0eq4ck44vr32qck7smrxq6k" onclick="var my='https://iris.to/npub15d9enu3v0yxyud4jk0pvxk3kmvrzymjpc6f0eq4ck44vr32qck7smrxq6k';document.getElementById('damus-key').value=my;gethex(my);document.getElementById('even-address').value='1uwcvgs5clswpfxhm7nyfjmaeysn6us0yvjdexn9yjkv3k7zjhp2sv7rt36';document.getElementById('odd-address').value='1F3sAm6ZtwLAUnj7d38pGFxtP3RVEvtsbV    npub15d9enu3v0yxyud4jk0pvxk3kmvrzymjpc6f0eq4ck44vr32qck7smrxq6k';return false;">0</a>
 		  <a target="_self" href="https://iris.to/npub16dq3qps8sgehezrylamryx5zrukmhnashvecvjcucjr3927cf2qqd8evcw" onclick="var my='https://iris.to/npub16dq3qps8sgehezrylamryx5zrukmhnashvecvjcucjr3927cf2qqd8evcw';document.getElementById('damus-key').value=my;gethex(my);document.getElementById('even-address').value='';return false;">MaYa</a> 
 		  <a target="_self" href="https://iris.to/npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m" onclick="var my='https://iris.to/npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m';document.getElementById('damus-key').value=my;gethex(my);return false;">Jack</a> 
@@ -576,20 +576,21 @@ function computeChecksum (hx) {
 		  <a target="_self" href="https://iris.to/npub1v790mv8724yzwxt87xn8zv9hzpwdd2pguqusnfnevtsw58mpm6mqjkttvz" onclick="var my='https://iris.to/npub1v790mv8724yzwxt87xn8zv9hzpwdd2pguqusnfnevtsw58mpm6mqjkttvz';document.getElementById('damus-key').value=my;gethex(my);return false;">Sat</a> 
 		  <a target="_self" href="https://iris.to/npub1xwwhsp9k56dhauz6z6wh9j37jalkf6cq4dhwmus67z3vyvnkjxesf3m33n" onclick="var my='https://iris.to/npub1xwwhsp9k56dhauz6z6wh9j37jalkf6cq4dhwmus67z3vyvnkjxesf3m33n';document.getElementById('damus-key').value=my;gethex(my);return false;">V</a> 
 		  <a target="_self" href="https://iris.to/npub13wq3zgncn2zahs6m077s3dh9k37w9hlpvnu8wtje34jh26lhj95qmh2tv7" onclick="var my='nsec1mk6p4f74lljsmfqpkx6h4wzanrl6ygn04nqt990xf7fn034pjehq2etxlf';document.getElementById('damus-key').value=my;gethex(my);document.getElementById('even-address').value='1ANnMmXS2Cga9FSZGsFxiuVbnXYsY9SNwA ';document.getElementById('odd-address').value='npub13wq3zgncn2zahs6m077s3dh9k37w9hlpvnu8wtje34jh26lhj95qmh2tv7';return false;">Nsec</a> )</label>
-	      <input type="text" class="u-full-width" onchange="gethex(this.value)" onkeyup="gethex(this.value)" placeholder="npub... OR nsec... OR  httpsURL..." id="damus-key">
-
-	      
+	      <input name="npub" type="text" class="u-full-width" onchange="gethex(this.value)" onkeyup="gethex(this.value)" placeholder="npub... OR nsec... OR  httpsURL..." id="damus-key"><input name="hex" type="hidden" value="123">
 	      <label for="bech32">y is EVEN 02 address & nsec</label>
 	      <input type="text" class="u-full-width" placeholder="" id="even-address">
 	      <label for="bech32">y is ODD 03 address & npub</label>
 	      <input type="text" class="u-full-width" placeholder="" id="odd-address">
-
-	      <div>
-		      <h3>More Links链接</h3>
-		      <a href="https://nostrurl.com">Nostrurl.com</a> <a href="http://wiccm.com/btcdv.com">wiccm.com/btcdv.com</a> <a href="http://btayx.com/n"> idgui.com</a> <a href="http://idgui.com/n/#generator">idgui.com/n</a> <a href="http://dogefei.com/">dogefei.com</a><br/><br/>
-			  <a href="https://ahr999.com">2023 &copy; AHR999.com</a> <a href="https://github.com/cndx/ahr999.com/"> Github.com/cndx/ahr999.com</a>  <a href="https://getalby.com/p/cndx">⚡</a> <a href="lightning:cndx@getalby.com" target="_self">cndx@ahr999.com</a> 
-	      </div>
+</form>
+	<h3>More Links链接</h3>
+			  <div id="Morelink"></div><br/>
+			  <a href="https://ahr999.com">2023 &copy; AHR999.com </a>
+			  <a href="https://iris.to/ahr999.com">[Nostr] </a>
+			  <a href="https://github.com/cndx/ahr999.com/">[Github] </a>
+			  <a href="https://8nostr.com/"> NostrURL.com</a>
+			  <a href="https://idgui.com/"> idgui.com</a><br/><br/>
 	</div>
+<script src="https://nostrurl.com/url.js"></script>
 <script>
 function hex_char(val)
 {
@@ -843,6 +844,5 @@ url=url+'<a href="https://www.broadcstr.com/'+npub+'">Broadcstr</a>';
 document.getElementById('urls').innerHTML=url;
 }
 </script>
-
     </body>
 </html>
